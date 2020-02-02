@@ -1,4 +1,4 @@
-//#include <stdio.h>
+#include <stdio.h>
 
 #define max 10
 
@@ -60,11 +60,11 @@ void arraymerge(int low, int mid, int high, int arr[])
 
     while (mid2 <= high) //Gets remaining numbers from 2nd array
     {
-        temp[start++] = arr[mid2++]
+        temp[start++] = arr[mid2++];
     }
 
-    for(i = low, mid2 = 0; i <= high, i++, j++) //Puts numbers back into array
+    for(i = low, mid2 = 0; i <= high; i++, mid2++) //Puts numbers back into array
     {
-        arr[i] = temp[j];
+        arr[i] = temp[mid2++];
     }
 }
