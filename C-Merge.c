@@ -59,10 +59,14 @@ void mergeS(int arr[], int low, int high)
 
 }
 
+//Wrapper class of merge sort
 void msort(int *a, int n)
 {
+    //Determines the beginning of the the array
     int low;
     low = 0;
+
+    //Passes array, low, and size - 1 of array through proper function
     mergeS(a, low, n - 1);
 }
 
