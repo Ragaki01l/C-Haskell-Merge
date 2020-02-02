@@ -72,11 +72,6 @@ void msort(int *a, int n)
 
 int main()
 {
-    int arrsize = sizeof(arr);
-    int *arrpoint;
-
-    arrpoint = arr;
-
     printf("Unsorted array is : ");
 
     for(int i = 0; i < max; i++){
@@ -85,7 +80,7 @@ int main()
 
     msort(arr, max);
 
-    printf("\n Sorted array is : ");
+    printf("\nSorted array is : ");
 
     for(int j = 0; j < max; j++){
         printf("%d : ", arr[j]);
