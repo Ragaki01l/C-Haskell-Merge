@@ -51,10 +51,10 @@ void mergeS(int arr[], int low, int high)
 
     if(low < high)
     {
-        mid = (low + high)/2;
-        mergeS(arr, low, mid);
-        mergeS(arr, mid + 1, high);
-        arraymerge( low, mid, mid + 1, high, arr);
+        mid = (low + high)/2; //Calculates the middle index of the array
+        mergeS(arr, low, mid); //Recursion on left side of tree
+        mergeS(arr, mid + 1, high); //Recursion on righy side of tree
+        arraymerge( low, mid, mid + 1, high, arr); //Array merging
     }
 
 }
