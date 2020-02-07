@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define max 9
+#define max 10
 
 int arr[] = {4, 65, 2, -31, 0, 99, 2 ,83, 782, 1}; //Initialize array to be sorted
 
