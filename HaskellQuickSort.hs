@@ -7,6 +7,10 @@ quick :: [Integer] -> [Integer] -- Sets up the expected inputs to be used
 quick []   = []  -- Empty Set Rule
 quick (h:t)= quick  [ y | y <- t , y < h] ++ [h] ++  quick[ y | y <- t , y > h]
 
+--Main function
+main :: IO()
+main = print(quick [4, 65, 2, -31, 0, 99, 2, 83, 782, 1]) --Array to be sorted
+
 --  [ y | y <- t , y < h] maps left side of the list with condition y < h
 -- h is the pivot, mapped from the 1st element of the list 
 -- quick[ y | y <- t , y > h] maps right side of the list with condition y > h
