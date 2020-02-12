@@ -1,0 +1,12 @@
+Though the functions of the algorithm is the same between C and Haskell
+the implementation is widely different, so even though I know how C works, with
+the use of pointers, the way to implement it in Haskell is widely different.
+C gives instructions to the computer and will continue executing the instructions until there
+are no more instructions to give, but with Haskell, it is a pure functional language, so instead
+giving the instructions to the compiler, Haskell essentially figures out what to do after
+declaring 
+
+In terms of speed C is much faster as it pretty much translate directly into assembly language
+and in this regard the performance it's much higher. Haskell on the other hand is a high level
+functional language, which means it has to take steps to translate the definitions into 
+assembly language.
